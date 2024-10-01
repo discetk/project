@@ -1,0 +1,466 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before, /*псевдоклассы*/
+*::after{
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    display: inline-block; /*снаружи как строчный, внутри как блочный*/
+    color: inherit; /*наследует от родителя*/
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+body{
+    min-width: 320px;
+    word-break: normal; /*для правильного переноса*/
+    font-family: 'Montserrat', 'Roboto', san-serif;
+}
+
+/* global style - обнуление для списков и кнопок*/
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+/*header ----------------------------------------------------------------------------*/
+.header-wrapper {
+    border-bottom: 1px solid #7A7A7A;
+}
+
+.header-wrapper {
+    display: flex;
+    max-width: 1142px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 26px 0;
+}
+
+.logo-description {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color:#434A5C ;
+    line-height: 128%;
+    padding-left: 23px;
+    padding-top: 21px;
+}
+
+.number-wrapper {
+    max-width: 913px;
+    display: flex;
+    margin-left: auto;
+    padding: 21px 0 0 23px;
+}
+.header-number {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    color:#576698;
+    line-height: 128%;
+    text-decoration: underline;
+    padding-left: 23px;
+}
+
+.p-number {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color:#484848 ;
+    line-height: 128%;
+    padding-left: 23px;
+}
+
+.header-wrapper-down {
+    display: flex;
+    max-width: 1142px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 28px 0 36px 0;
+}
+
+.header-list {
+    width: 608px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ /*.header-nav {
+
+ }
+
+.header-li-element{
+    
+}
+*/
+.header-list-link {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    color: #7A7A7A ;
+    line-height: 18.2px;
+}
+
+.btn-header-contain {
+    margin-left: 234px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-btn-program {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    color:#7A7A7A ;
+    line-height: 18.2px;
+}
+
+.header-btn-business {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    color: #7A7A7A ;
+    line-height: 18.2px;
+    margin-left: 18px;
+}
+/*main-----------------------------------------------------------------------------------------*/
+.main-biggest-img-contain {
+    width: 1142px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #7A7A7A;
+}
+
+.main-biggest-img {
+    width: 1142px;
+    height: 595px;
+}
+
+.main-first-sect {
+    width: 1142px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.h1 {
+    padding-top: 27px;
+    padding-right: 408px;
+    font-family: "Roboto";
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 81.92px;
+}
+
+.h2-first-sect {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35.84px;
+    text-align: left;
+    color: #BF6024;
+}
+
+.main-list {
+    padding-top: 17px;
+    flex-wrap: wrap;
+    width: 1142px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 92px;
+    border-bottom: 1px solid #7A7A7A
+}
+
+.main-li-element {
+    justify-content: space-between;
+    padding-bottom: 72px
+}
+
+.main-li-img {
+    width: 555px;
+    height: 300px;
+}
+
+.h3-main-list {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.92px;
+    text-align: left;
+    color:#141414;
+    padding-top: 12px;
+}
+
+.main-second-sect {
+    padding-top: 67px;
+    width: 1142px;
+    min-width: 320px;
+    margin: 0 auto;
+
+}
+/*Second section----------------------------------------------*/
+/*
+.div-second-sect{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1142px;
+    height: 600px;
+}
+*/
+.div-second-sect {
+    display: flex;
+    padding-top: 31px;
+    padding-bottom: 75px;
+    border-bottom: 1px solid #7A7A7A
+}
+
+.h2-second-sect {
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35.84px;
+    text-align: left;
+    color:#BF6024;
+}
+
+.first-art {
+    width: 555px;
+    position: relative;
+    display: inline-block;
+}
+
+.img-first-art {
+    width: 555px;
+    height: 600px;
+}
+
+.h3-first-art {
+    position: absolute;
+    top:498px;
+    left: 34px;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30.72px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.a1-first-art {
+    position: absolute;
+    top: 544px;
+    left: 34px;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.92px;
+    text-align: left;
+    color:#E5C6B2;
+    background-color: #BF6024;
+    border-radius: 50px;
+    padding: 5px 13px;
+}
+
+.a2-first-art {
+    position: absolute;
+    top: 544px;
+    left: 197px;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.92px;
+    text-align: left;
+    color:#E5C6B2;
+    border-color:#E5C6B2;
+    padding: 5px 13px;
+    border: 1px;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+.second-art {
+    width: 540px;
+    height: 285px;
+    background-color:#EAEDF2;
+    display: inline-block;
+}
+
+.h3-second-art {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 84px;
+    padding-left: 73px;
+    padding-right: 262px;
+    line-height: 30.72px;
+    color: #141414;
+}
+
+.a-second-art {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    border-color:#BF6024;
+    border: 1px;
+    border-radius: 50px;
+    border-style: solid;
+    margin-top: 33px;
+    margin-left: 86px;
+    padding: 5px 13px;
+    line-height: 17.92px;
+    text-align: left;
+    color: #BF6024;
+}
+
+.third-art {
+    background-color:#EAEDF2;
+    width: 540px;
+    height: 285px;
+    display: inline-block;
+}
+
+.div2-second-sect {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: space-between
+}
+
+.h3-third-art {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 500;
+    padding: 65px 0px 0px 73px;
+    line-height: 30.72px;
+    color: #141414;
+}
+
+.p-third-art {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.92px;
+    text-align: left;
+    color:#141414;
+    margin: 11px 205px 23px 73px;
+}
+
+.a1-third-art {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.92px;
+    text-align: left;
+    color:#E5C6B2;
+    background-color: #BF6024;
+    border-radius: 50px;
+    padding: 5px 13px;
+    margin-left: 73px;
+}
+
+.a2-thirs-art {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.92px;
+    text-align: left;
+    color:#BF6024;
+    border-color:#BF6024;
+    padding: 5px 13px;
+    margin-left: 12px;
+    border: 1px;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+.footer {
+    display: flex;
+    width: 1142px;
+    padding-top: 56px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+}
+
+.left-footer {
+    margin: auto;
+    width: 361px;
+}
+
+.center-footer {
+    margin: auto;
+    width: 247px;
+}
+
+.right-footer {
+    margin: auto;
+    width: 340px;
+}
+
+.p-left-footer {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18.2px;
+    color: #424242;
+    padding-bottom: 8px ;
+}
+
+.a-left-footer {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    color: #424242;
+    padding-bottom: 14px;
+}
+
+.a-center-footer {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18.2px;
+    text-decoration: underline;
+    text-decoration-color: #424242;
+    text-decoration-style: solid;
+    color: #424242;
+    padding-bottom: 22px;
+}
+
+.p-center-footer {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    color: #424242;
+}
+
+.p-right-footer {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    color: #424242;
+}
