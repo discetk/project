@@ -175,7 +175,7 @@ body{
 
 .h2-first-sect {
     padding-top: 32px;
-    padding-bottom: 16px;
+    padding-bottom: 33px;
     font-family: "Roboto";
     font-size: 28px;
     font-weight: 500;
@@ -184,7 +184,15 @@ body{
     color: #BF6024;
 }
 
-.main-list {
+.entertaiment-arts {
+    width: 1142px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 72px 28px;   
+    padding-bottom: 92px;
+    border-bottom: 1px solid #7A7A7A
+}
+/*.main-list {
     padding-top: 17px;
     flex-wrap: wrap;
     width: 1142px;
@@ -198,13 +206,13 @@ body{
     justify-content: space-between;
     padding-bottom: 72px
 }
-
-.main-li-img {
+*/
+.main-art-img {
     width: 555px;
     height: 300px;
 }
 
-.h3-main-list {
+.h3-main-arts {
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
@@ -222,16 +230,10 @@ body{
 
 }
 /*Second section----------------------------------------------*/
-/*
-.div-second-sect{
-    display: flex;
-    flex-wrap: wrap;
-    width: 1142px;
-    height: 600px;
-}
-*/
+
 .div-second-sect {
-    display: flex;
+    grid-template-columns: 2fr 1fr;
+    display: grid;
     padding-top: 31px;
     padding-bottom: 75px;
     border-bottom: 1px solid #7A7A7A
